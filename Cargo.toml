@@ -1,0 +1,16 @@
+[package]
+name = "flock-or-lockfileex-cli"
+description = "Doing flock or LockFileEx depending on platform"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+env_logger = "*"
+log = "*"
+fs2 = "*"
+scopeguard = "*"
+
+[profile.release]
+debug = 1
